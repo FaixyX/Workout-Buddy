@@ -1,0 +1,26 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "description": "Shopping List using MERN",
+  "main": "server js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Faizan Faryad",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^3.7.4",
+    "mongoose": "^5.13.21",
+    "validator": "^13.11.0"
+  }
+}
