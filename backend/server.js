@@ -9,7 +9,7 @@ const userRoutes = require('./routes/user')
 // express app
 const app = express()
 
-app.use(cors())
+
 
 // // Vercel link allow
 // app.use(cors({
@@ -42,3 +42,5 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .catch((error) => {
     console.log(error)
   })
+
+app.use(cors())
