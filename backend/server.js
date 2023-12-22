@@ -12,7 +12,7 @@ const app = express()
 
 // Vercel link allow
 app.use(cors({
-origin: ['https://workout-buddy-coral.vercel.app/'],
+origin: ['https://workout-buddy-xi.vercel.app'],
 methods: ["POST", "GET"],
 credentials: true
 }))
