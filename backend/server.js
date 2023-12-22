@@ -11,10 +11,7 @@ const app = express()
 
 
 // Vercel link allow
-app.use(cors({
-origin: ['https://workout-buddy-xi.vercel.app'],
-credentials: true
-}))
+app.use(cors())
 
 // middleware
 app.use(express.json())
