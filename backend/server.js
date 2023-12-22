@@ -10,14 +10,12 @@ const userRoutes = require('./routes/user')
 const app = express()
 
 
-
-// // Vercel link allow
-// app.use(cors({
-//   origin: ['https://workout-buddy-coral.vercel.app/'],
-//   methods: ["POST", "GET"],
-//   credentials: true
-//   }
-// ))
+// Vercel link allow
+app.use(cors({
+origin: ['https://workout-buddy-coral.vercel.app/'],
+methods: ["POST", "GET"],
+credentials: true
+}))
 
 // middleware
 app.use(express.json())
@@ -43,4 +41,3 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     console.log(error)
   })
 
-app.use(cors())
