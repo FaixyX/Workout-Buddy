@@ -9,6 +9,8 @@ const userRoutes = require('./routes/user')
 // express app
 const app = express()
 
+app.use(cors())
+
 // // Vercel link allow
 // app.use(cors({
 //   origin: ['https://workout-buddy-coral.vercel.app/'],
