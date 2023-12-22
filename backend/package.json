@@ -4,9 +4,7 @@
   "description": "Shopping List using MERN",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js"
-    "build": "ci= npm run build"
+    "vercel-build": "node ./server.js"
   },
   "author": "Faizan Faryad",
   "license": "MIT",
