@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js"
+    "build": "ci= npm run build"
   },
   "author": "Faizan Faryad",
   "license": "MIT",
