@@ -14,6 +14,8 @@ app.use(cors({
   origin: 'https://workout-buddy-frontend-eight.vercel.app/'
 }))
 
+
+
 // middleware
 app.use(express.json())
 
