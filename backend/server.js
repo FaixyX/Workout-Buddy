@@ -15,7 +15,6 @@ app.use(cors({
 }))
 
 
-
 // middleware
 app.use(express.json())
 
