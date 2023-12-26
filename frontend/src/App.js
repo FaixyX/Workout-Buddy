@@ -17,16 +17,16 @@ function App() {
       <div className='pages'>
         <Routes>
           <Route
-            path = "https://workout-buddy-frontend-eight.vercel.app/"
-            element = {user ? <Home />: <Navigate to = 'https://workout-buddy-frontend-eight.vercel.app/login'/>}
+            path = "/"
+            element = {user ? <Home />: <Navigate to = '/login'/>}
           />
           <Route
-            path = "https://workout-buddy-frontend-eight.vercel.app/login"
-            element = {!user ? <Login />: <Navigate to = 'https://workout-buddy-frontend-eight.vercel.app/'/>}
+            path = "/login"
+            element = {!user ? <Login />: <Navigate to = '/'/>}
           />
           <Route
-            path = "https://workout-buddy-frontend-eight.vercel.app/signup"
-            element = {!user ? <Signup />: <Navigate to = 'https://workout-buddy-frontend-eight.vercel.app/'/>}
+            path = "/signup"
+            element = {!user ? <Signup />: <Navigate to = '/'/>}
           />
         </Routes>
       </div>
