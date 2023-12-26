@@ -11,7 +11,7 @@ const app = express()
 
  // Vercel link allow
 app.use(cors({
-  origin: 'https://workout-buddy-frontend-eight.vercel.app/',
+  origin: 'https://workout-buddy-faixyxs-projects.vercel.app',
 }))
 
 
