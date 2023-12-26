@@ -1,12 +1,12 @@
 {
     "version": 2,
     "builds": [
-      {"src": "src/App.js", "use": "@vercel/static","config": { "includeFiles": ["**"] }}
+      {"src": "src/index.js", "use": "@vercel/static","config": { "includeFiles": ["**"] }}
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "src/App.js"
+        "dest": "src/index.js"
       }
     ]
   }
