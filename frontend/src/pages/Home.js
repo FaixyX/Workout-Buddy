@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('https://workout-buddy-tan.vercel.app/api/workouts', {
+      const response = await fetch('https://workout-buddy-faixyxs-projects.vercel.app/api/workouts', {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }
