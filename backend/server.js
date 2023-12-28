@@ -12,6 +12,8 @@ const app = express()
  // Vercel link allow
 app.use(cors({
   origin: 'https://workout-buddy-faixyxs-projects.vercel.app',
+  methods: ["POST", "GET"],
+  credentials: true
 }))
 
 
