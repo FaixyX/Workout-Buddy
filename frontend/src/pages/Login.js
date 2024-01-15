@@ -1,16 +1,14 @@
 import { useState } from "react"
 import { useLogin } from "../hooks/useLogin"
-import axios from 'axios'
+
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const { login, error, isLoading} = useLogin()
 
-  axios.defaults.withCredentials = true;
-
   const handleSubmit = async (e) => {
     e.preventDefault()
-    axios.post('https://workout-buddy-frontend-eight.vercel.app/login', {email, password})
+    
     await login(email, password)
   }
 
