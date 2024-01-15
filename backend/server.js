@@ -10,7 +10,7 @@ const app = express()
 
  // Vercel link allow
  app.use(cors({
-  origin: 'https://workout-buddy-frontend-eight.vercel.app',
+  origin: 'https://workout-buddy-frontend-mvtmqrpbp-faixyxs-projects.vercel.app/',
   methods: ['GET', 'POST'], // Add other methods as needed
   credentials: true, // Enable credentials (cookies, authorization headers)
 }));
